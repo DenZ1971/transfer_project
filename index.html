@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+
+</head>
+<body>
+<div class="header">
+
+
+</div>
+<div class="wrapper">
+    <div class="form">
+    <form action="#" method="post" id="form_data" class="form_data">
+        <h1 class="form_title">Objednavka</h1>
+        <h4 class="form_description">Po vyplnení a zaslaní objednávky vás budeme kontaktovať emailom o potvrdení a upresnení všetkých podrobností.
+            Vyplňte všetky povinné polia*: meno a priezvisko, e-mail, telefónne číslo, odkiaľ, kam, čas, počet osôb, dátum. Pre upresnenie môžete vyplniť aj krátky popis k objednávke.</h4>
+
+        <div class="mb-3">
+            <label for="firstname" class="form-label">Meno *</label>
+            <input type="text"
+                   class="form-control _req"
+                   id="firstname"
+                   name="firstname"
+                   placeholder="Meno"
+            >
+        </div>
+        <div class="mb-3">
+            <label for="surname" class="form-label">Priezvisko *</label>
+            <input type="text"
+                   class="form-control _req"
+                   id="surname"
+                   name="surname"
+                   placeholder="Priezvisko"
+            >
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail *</label>
+            <input type="email"
+                   class="form-control _req _email"
+                   id="email"
+                   name="email"
+                   placeholder="E-mail"
+            >
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Tel. číslo *</label>
+            <input type="tel"
+                   class="form-control _req"
+                   id="phone"
+                   name="phone"
+                   placeholder="Tel. číslo"
+            >
+        </div>
+        <div class="mb-3">
+            <label for="address_start" class="form-label">Adresa vyzdvihnutia *</label>
+            <input type="text"
+                   class="form-control _req"
+                   id="address_start"
+                   name="address_start"
+                   placeholder="Adresa vyzdvihnutia"
+            >
+        </div>
+        <div class="mb-3">
+            <label for="address_finish" class="form-label">Cieľová adresa *</label>
+            <input type="text"
+                   class="form-control _req"
+                   id="address_finish"
+                   name="address_finish"
+                   placeholder="Cieľová adresa"
+            >
+        </div>
+        <div class="mb-3">
+            <label for="date" class="form-label">Datum vyzdvihnutia *</label>
+            <input type="date"
+                   class="form-control _req"
+                   id="date"
+                   name="date"
+                   placeholder="Datum vyzdvihnutia"
+            >
+        </div>
+        <div class="mb-3">
+            <label for="time" class="form-label">Čas vyzdvihnutia *</label>
+            <input type="time"
+                   class="form-control _req"
+                   id="time"
+                   name="time"
+                   placeholder="Čas vyzdvihnutia"
+            >
+        </div>
+        <div class="mb-3">
+            <label for="quantity" class="form-label">Počet osôb *</label>
+            <input type="number"
+                   min="1"
+                   max="4"
+                   class="form-control _req"
+                   id="quantity"
+                   name="quantity"
+                   placeholder="Počet osôb"
+            >
+        </div>
+
+        <h3 class="form_additional-description"> Doplnkové informácie </h3>
+
+        <div class="mb-3">
+            <label for="cars" class="form-label">Výber vozidla </label>
+            <select
+                    class="form-control"
+                    id="cars"
+                    name="cars">
+                <option value="--">------</option>
+                <option value="Mercedes C-class T-model">Mercedes C-class T-model</option>
+
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="text" class="form-label">Správa pre vodiča</label>
+            <textarea class="form-control"
+                      id="text"
+                      name="text"
+                      rows="4"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <div class="checkbox">
+                <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox_input _req">
+                <label for="formAgreement" class="checkbox_label"><span>Súhlasím so všeobecnými obchodnými podmienkami a informáciou o spracúvaní osobných údajov pre účely vybavenia objednávky.</span></label>
+            </div>
+        </div>
+
+
+        <button type="submit" name="submit" class="btn btn-primary">Objednať vozidlo</button>
+    </form>
+</div>
+</div>
+<script src="./js/script.js"></script>
+</body>
+
+
+</html>
